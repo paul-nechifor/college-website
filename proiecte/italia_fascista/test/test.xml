@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grila>
+	<meta>
+		<titlu>Test</titlu>
+		<autor>Paul Nechifor</autor>
+		<descriere>gol</descriere>
+		<timp min="99" sec="20"/>
+	</meta>
+	<intrebari>
+		<intrebare text="Momentul decisiv in ascensiunea fascismului a fost:">
+			<rasp text="afacerea Matteotti" pct="0"/>
+			<rasp text="retragerea pe colina Aventin" pct="0"/>
+			<rasp text="marsul asupra Romei" pct="1"/>
+		</intrebare>
+		<intrebare text="Filozoful fascismului a fost:">
+			<rasp text="Niccolò Machiavelli" pct="0"/>
+			<rasp text="Giovanni Gentile" pct="1"/>
+			<rasp text="Gabriele D'Annunzio" pct="0"/>
+		</intrebare>
+		<intrebare text="Printre antifascistii trimisi in inchisoare se numara:">
+			<rasp text="ganditorul marxist Antonio Gramsci" pct="1"/>
+			<rasp text="filozoful Giovanni Gentile" pct="0"/>
+			<rasp text="Corneliu Zelea Codreanu" pct="0"/>
+		</intrebare>
+		<intrebare text="Carta muncii a fost promulgata in anul:">
+			<rasp text="1927" pct="1"/>
+			<rasp text="1940" pct="0"/>
+			<rasp text="1921" pct="0"/>
+		</intrebare>
+		<intrebare text="Fascismul a pretins ca realizeaza o opera originala, depasind capitalismul si marxismul, prin:">
+			<rasp text="autarhie" pct="0"/>
+			<rasp text="propaganda" pct="0"/>
+			<rasp text="corporatism" pct="1"/>
+			<rasp text="nihilism" pct="0"/>
+		</intrebare>
+		<intrebare text="In urma celui de-al doilea razboi italiano-abisian a fost invadata urmatoarea tara din Africa:">
+			<rasp text="Nigeria" pct="0"/>
+			<rasp text="Somalia" pct="0"/>
+			<rasp text="Egipt" pct="0"/>
+			<rasp text="Etiopia" pct="1"/>
+			<rasp text="Albania" pct="0"/>
+		</intrebare>
+		<intrebare text="Unde se refugiaza Mussolini dupa ce decide sa nu faca serviciul militar">
+			<rasp text="in Germania" pct="0"/>
+			<rasp text="in Franta" pct="0"/>
+			<rasp text="in Elvetia" pct="1"/>
+			<rasp text="in Polonia" pct="0"/>
+		</intrebare>
+		<intrebare text="Militia fascista este creata in anul:">
+			<rasp text="1923" pct="1"/>
+			<rasp text="1918" pct="0"/>
+			<rasp text="1939" pct="0"/>
+			<rasp text="1944" pct="0"/>
+		</intrebare>
+		<intrebare text="Pactul semnat de Italia si Germania in anul 1939 s-a numit :">
+			<rasp text="Pactul Tripartit" pct="0"/>
+			<rasp text="Pactul de Otel" pct="1"/>
+			<rasp text="Pactul Axei" pct="0"/>
+			<rasp text="Pactul anti-Komintern" pct="0"/>
+		</intrebare>
+		<intrebare text="La ce ziar este invitat sa conduca Mussolini in Milano:">
+			<rasp text="Avanti" pct="1"/>
+			<rasp text="La Repubblica" pct="0"/>
+			<rasp text="Il Tempo" pct="0"/>
+			<rasp text="Milano Lorenteggio" pct="0"/>
+		</intrebare>
+	</intrebari>
+	<corectare>
+		<scor p="0" text="Foarte slab"/>
+		<scor p="0" text="Slab"/>
+		<scor p="5" text="Suficient"/>
+		<scor p="7" test="Bine"/>
+		<scor p="10" text="Foarte bine"/>
+	</corectare>
+</grila>

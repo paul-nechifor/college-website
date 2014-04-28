@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+<!-- Greeting categories. -->
+<category>
+	<pattern>WELCOME</pattern>
+	<template>
+		<think>
+			<system> <!-- Defines a method to create new categories from user input at run-time. -->
+          import bitoflife.chatterbean.AliceBot;
+          import bitoflife.chatterbean.Context;
+          import bitoflife.chatterbean.Graphmaster;
+          import bitoflife.chatterbean.aiml.Category;
+          import bitoflife.chatterbean.text.Transformations;
+          
+          void learn(String pattern, String template)
+          {
+            /* The "match" variable represents the current matching context. */
+            AliceBot bot = match.getCallback();
+            Context context = bot.getContext();
+            Transformations transformations = context.getTransformations();
+    
+            pattern = transformations.normalization(pattern);
+            Category category = new Category(pattern, new String[] {template});
+            Graphmaster brain = bot.getGraphmaster();
+            brain.append(category);
+          }
+        	</system>
+        	<javascript>
+				<system>
+					String[] memory = <javascript>retrieveMemory()</javascript>;
+					for (int i = 0, n = memory.length / 2; i &lt; n; i+= 2)
+					learn(memory[i], memory[i + 1]); 
+				</system>
+				changeFace('happy');
+			</javascript>
+		</think>
+	Hello!
+	</template>
+</category>
+
+<category>
+    <pattern>RESTORE MEMORY</pattern>
+    <template>
+      <think>
+        <javascript> <!-- Only executes under a browser environment. -->
+          <system> <!-- Restore previously learned categories from a cookie. -->
+            String[] memory = <javascript>retrieveMemory()</javascript>;
+            for (int i = 0, n = memory.length / 2; i &lt; n; i+= 2)
+              learn(memory[i], memory[i + 1]); 
+          </system>
+          changeFace('happy');
+        </javascript>
+      </think>
+    </template>
+  </category>
+  
+  <!-- Categories that cause web pages to be loaded into the inline frame. -->
+  <category>
+    <pattern>GO TO *</pattern>
+    <template>
+      You want to leave me? Fine! See if I care.
+      <think>
+        <javascript>changeFace('rage'); goTo('<star/>');</javascript>
+      </think>
+    </template>
+  </category>
+  
+  <!-- A category set to learn simple user-fed categories. -->
+<category>
+	<pattern>WRONG</pattern>
+	<template>
+		Sorry. What would be a good answer?
+		<think><javascript>changeFace('embarased');</javascript></think>
+	</template></category>
+<category>
+	<pattern>BAD ANSWER</pattern>
+	<template>
+		Sorry. What would be a good answer?
+		<think><javascript>changeFace('embarased');</javascript></think>
+	</template>
+</category>
+  <category>
+    <pattern>_</pattern>
+    <that>WHAT WOULD BE A GOOD ANSWER</that>
+    <template>
+      <system>learn("<input index="3"/>", "<input index="1"/>")</system>
+      Alright! I got it.
+      <think>
+        <javascript>
+          <!-- Save the learned category to a cookie. Got to find a good way to deal with special JS chars... -->
+          appendMemory("<input index="3"/>", "<input index="1"/>");
+          changeFace('undecided');
+        </javascript>
+      </think>
+    </template>
+  </category>
+    <category>
+    <pattern>CALCULATE THIS *</pattern>
+    <template>
+      Oh, that's easy: <star/> = <system><star/></system>
+      <think>
+        <javascript>changeFace('happy');</javascript>
+      </think>
+    </template>
+  </category>
+  
+  <!-- Categories for saying goodbye. -->
+<category>
+	<pattern>BYE *</pattern>
+	<template><srai>GOODBYE</srai></template>
+</category>
+<category>
+	<pattern>FAREWELL *</pattern>
+	<template><srai>GOODBYE</srai></template>
+</category>
+<category>
+	<pattern>GOODBYE *</pattern>
+	<template><srai>GOODBYE</srai></template>
+</category>
+<category>
+	<pattern>SEE YOU *</pattern>
+	<template><srai>GOODBYE</srai></template>
+</category>
+<category>
+	<pattern>UNTIL NEXT TIME *</pattern>
+	<template><srai>GOODBYE</srai></template>
+</category>
+<category>
+	<pattern>UNTIL WE MEET AGAIN *</pattern>
+	<template><srai>GOODBYE</srai></template>
+</category>
+<category>
+	<pattern>GOODBYE</pattern>
+	<template>
+		Bye for now! Come again soon!
+		<think><javascript>changeFace('oh');</javascript></think>
+	</template>
+</category>
+  
+
+<category>
+	<pattern>THAT IS A DEFAULT RESPONSE RIGHT</pattern>
+	<template>
+		Yes, I'm affraid so.
+		<think><javascript>changeFace('embarased');</javascript></think>
+	</template>
+</category>
+
+  	<category>
+  		<pattern>HOW MUCH IS *</pattern>
+		<template><srai><star /></srai></template>
+	</category>
+  	<category>
+  		<pattern>WHAT IS *</pattern>
+		<template><srai><star /></srai></template>
+	</category>
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <think>
+        <set name="additionResult">
+          <system>
+            try
+            {
+              result = eval("<star/>");
+            }
+            catch (Exception e)
+            {
+              result = "";
+            }
+          </system>
+        </set>
+      </think>
+      <condition name="additionResult">
+        <li value="">
+          <random>
+            <li>Uh... sorry, what?</li>
+            <li>I don't understand!</li>
+          </random>
+          <think>
+            <javascript>changeFace('confused');</javascript>
+          </think>
+        </li>
+        <li>
+          Oh, that's easy: <get name="additionResult"/>
+          <think>
+            <javascript>changeFace('geek');</javascript>
+          </think>
+        </li>
+      </condition>
+    </template>
+  </category>
+</aiml>

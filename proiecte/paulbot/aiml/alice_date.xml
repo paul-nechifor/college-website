@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<category><pattern>WHAT TIME IS IT</pattern><template><think><set name="dateFormat">HH:mm:ss</set></think>It's <date format="%x"/>.</template></category>
+<category><pattern>WHAT TIME IS IT *</pattern><template><srai>WHAT TIME IS IT</srai></template></category>
+<category><pattern>WHAT DAY IS IT</pattern><template><think><set name="dateFormat">EEEE, d MMMM</set></think>It's <date format="%x"/>.</template></category>
+<category><pattern>WHAT DAY IS IT *</pattern><template><srai>WHAT DAY IS IT</srai></template></category>
+<category><pattern>WHAT IS THE DATE</pattern><template><think><set name="dateFormat">dd.MM.yyyy</set></think>It's <date format="%x"/>.</template></category>
+<category><pattern>WHAT IS THE DATE *</pattern><template><srai>WHAT IS THE DATE</srai></template></category>
+<category><pattern>WHAT IS TODAY *</pattern><template><srai>WHAT DAY IS IT</srai></template></category>
+<category><pattern>WHAT IS TODAY</pattern><template><srai>WHAT DAY IS IT</srai></template></category>
+<category><pattern>WHAT MONTH IS IT</pattern><template><think><set name="dateFormat">MMMM</set></think>It's <date format="%x"/>.</template></category>
+<category><pattern>WHAT MONTH IS IT *</pattern><template><srai>WHAT MONTH IS IT</srai></template></category>
+<category><pattern>WHAT YEAR IS IT</pattern><template><think><set name="dateFormat">yyyy</set></think>It's <date format="%x"/>. Have you been living under a rock?</template></category>
+<category><pattern>WHAT YEAR IS IT *</pattern><template><srai>WHAT YEAR IS IT</srai></template></category>
+<category><pattern>WHAT YEAR IS THIS</pattern><template><srai>WHAT YEAR IS IT</srai></template></category>
+<category><pattern>WHAT YEAR IS THIS *</pattern><template><srai>WHAT YEAR IS IT</srai></template></category>
+<category><pattern>WHAT IS THE YEAR</pattern><template><srai>WHAT YEAR IS IT</srai></template></category>
+<category><pattern>WHAT IS THE YEAR *</pattern><template><srai>WHAT YEAR IS IT</srai></template></category>
+</aiml>

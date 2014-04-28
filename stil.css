@@ -1,0 +1,110 @@
+/* Copyright (C) 2008 Paul R. Nechifor */
+
+/*#################### INITIALIZARE ####################*/
+html, head, body, div, ul, li, a, p, h2, table, tr, td {margin:0;padding:0;}
+
+
+/* Pozitii */
+html			{background:url(imagini/fundal_univ.png) #0B0505 fixed top no-repeat;}
+body			{margin:0 auto; width:866px;}
+div#margine_st	{display:table-cell; width:8px; background:url(imagini/margine_st.png);}
+div#centrat		{display:table-cell; width:850px;}
+div#margine_dr	{display:table-cell; width:8px; background:url(imagini/margine_dr.png);}
+div#antet		{display:block; width:850px; height:120px; background:url(imagini/antet.png);}
+div#meniu		{display:block; width:850px; height:43px; background:url(imagini/meniu.png);}
+div#continut	{display:block; width:850px; min-height:500px; background:url(imagini/continut.png) #080203 no-repeat;}
+div#scris		{padding:15px;}
+div#subsol		{display:block; width:850px; height:144px; background:url(imagini/subsol.png);}
+
+
+.del			{display:none;}
+.ascunde		{text-indent:-9999px;}
+
+
+div#meniu ul {display:block; margin:0 152px;}
+div#meniu li {list-style:none; padding:0; margin:0;}
+div#meniu a:focus {outline:none;}
+div#meniu a {display:block; float:left; text-indent:-9999px; height:40px; margin-top:2px;}
+div#meniu a#prima_pagina {background:url(imagini/meniu_normal.png) no-repeat 0px 0px; width:118px;}
+div#meniu a#despre_mine {background:url(imagini/meniu_normal.png) no-repeat 0px -40px; width:114px;}
+div#meniu a#blog {background:url(imagini/meniu_normal.png) no-repeat 0px -80px; width:60px;}
+div#meniu a#galerie {background:url(imagini/meniu_normal.png) no-repeat 0px -120px; width:82px;}
+div#meniu a#proiecte {background:url(imagini/meniu_normal.png) no-repeat 0px -160px; width:87px;}
+div#meniu a#contact {background:url(imagini/meniu_normal.png) no-repeat 0px -200px; width:84px;}
+
+div#meniu a#prima_pagina:hover {background:url(imagini/meniu_peste.png) no-repeat 0px 0px; width:118px;}
+div#meniu a#despre_mine:hover {background:url(imagini/meniu_peste.png) no-repeat 0px -40px; width:114px;}
+div#meniu a#blog:hover {background:url(imagini/meniu_peste.png) no-repeat 0px -80px; width:60px;}
+div#meniu a#galerie:hover {background:url(imagini/meniu_peste.png) no-repeat 0px -120px; width:82px;}
+div#meniu a#proiecte:hover {background:url(imagini/meniu_peste.png) no-repeat 0px -160px; width:87px;}
+div#meniu a#contact:hover {background:url(imagini/meniu_peste.png) no-repeat 0px -200px; width:84px;}
+
+div#meniu a#prima_pagina:active {background:url(imagini/meniu_activ.png) no-repeat 0px 0px; width:118px;}
+div#meniu a#despre_mine:active {background:url(imagini/meniu_activ.png) no-repeat 0px -40px; width:114px;}
+div#meniu a#blog:active {background:url(imagini/meniu_activ.png) no-repeat 0px -80px; width:60px;}
+div#meniu a#galerie:active {background:url(imagini/meniu_activ.png) no-repeat 0px -120px; width:82px;}
+div#meniu a#proiecte:active {background:url(imagini/meniu_activ.png) no-repeat 0px -160px; width:87px;}
+div#meniu a#contact:active {background:url(imagini/meniu_activ.png) no-repeat 0px -200px; width:84px;}
+
+div#scris h2 {display:block; margin:0 auto; height:40px; text-indent:-9999px;}
+div#scris h2#t_prima_pagina {background:url(imagini/titluri_pagini.png) no-repeat 222px 0px;}
+div#scris h2#t_despre_mine {background:url(imagini/titluri_pagini.png) no-repeat 222px -40px;}
+div#scris h2#t_galerie {background:url(imagini/titluri_pagini.png) no-repeat 222px -120px;}
+div#scris h2#t_proiecte {background:url(imagini/titluri_pagini.png) no-repeat 222px -160px;}
+div#scris h2#t_contact {background:url(imagini/titluri_pagini.png) no-repeat 222px -200px;}
+
+div#scris h3 { text-align:center; font-family:Garamond, serif; font-size:30px; color:#806669; margin:0px 0;}
+div#scris h4 { text-align:center; font-family:Garamond, serif; font-size:23px; color:#462F2d;}
+div#scris p		{line-height:1.55; text-indent:40px; text-align:justify; font-family:Garamond, serif; font-size:17px; color:#624F4d;}
+div#scris pre {color:#624F4d;}
+div#scris code {font-family:"Courier New", Courier, monospace; font-size:14px; color:#594A40;}
+div#scris li {font-family:Garamond, serif; font-size:17px; color:#624F4d; margin-left:50px;}
+div#scris textarea {background-color:#0b0404; border:1px solid #1b1010; color:#514243; font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+div#scris input {background-color:#0b0404; border:1px solid #1b1010; color:#514243;}
+div#scris input[type="button"] {background-color:#140708;}
+div#scris ul.fara {list-style:none;}
+div#scris a:link {color:#703F5A; text-decoration:none;}
+div#scris a:visited {color:#371E2D; text-decoration:none;}
+div#scris a:hover {color:#703F5A; text-decoration:underline;}
+div#scris a.gallery {color:#703F5A; text-decoration:none;} /*fix*/
+div#scris a:active {color:#703F5A; text-decoration:none;}
+
+
+div.copac img{margin:-1px; padding:0; width:18px; height:18px;}
+
+/*#################### PAULBOT ####################*/
+div#bot {width:600px; margin:0 auto;}
+img#face {display:block; width:128px; height:128px; float:left;}
+textarea#response {display:block; height:128px; width:470px; margin-bottom:3px;}
+input#request {display:block; width:543px; float:left; margin-right:3px;}
+input#say {display:block; width:52px;}
+
+/*#################### LITERE ####################*/
+span.A {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -0px;} span.A span {display:none;}
+span.B {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -47px;} span.B span {display:none;}
+span.C {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -94px;} span.C span {display:none;}
+span.D {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -141px;} span.D span {display:none;}
+span.E {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -188px;} span.E span {display:none;}
+span.F {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -235px;} span.F span {display:none;}
+span.G {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -282px;} span.G span {display:none;}
+span.H {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -329px;} span.H span {display:none;}
+span.I {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -376px;} span.I span {display:none;}
+span.J {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -423px;} span.J span {display:none;}
+span.K {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -470px;} span.K span {display:none;}
+span.L {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -517px;} span.L span {display:none;}
+span.M {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -564px;} span.M span {display:none;}
+span.N {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -611px;} span.N span {display:none;}
+span.O {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -658px;} span.O span {display:none;}
+span.P {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -705px;} span.P span {display:none;}
+span.Q {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -752px;} span.Q span {display:none;}
+span.R {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -799px;} span.R span {display:none;}
+span.S {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -846px;} span.S span {display:none;}
+span.T {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -893px;} span.T span {display:none;}
+span.U {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -940px;} span.U span {display:none;}
+span.V {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -987px;} span.V span {display:none;}
+span.W {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -1034px;} span.W span {display:none;}
+span.X {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -1081px;} span.X span {display:none;}
+span.Y {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -1128px;} span.Y span {display:none;}
+span.Z {float:left; display:block; width:47px; height:47px; margin:5px 5px 0 -1px; background:url(imagini/litere.png) no-repeat 0 -1175px;} span.Z span {display:none;}
+
+

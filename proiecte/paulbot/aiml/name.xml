@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+<category>
+	<pattern>DO YOU KNOW WHAT IT MEANS</pattern><that>MY FISRT NAME IS PAUL</that>
+	<template>Yes. <srai>WHAT DOES PAUL MEAN</srai></template>
+</category>
+<category>
+	<pattern>DO YOU KNOW WHAT IT MEANS</pattern><that>MY NAME IS PAUL</that>
+	<template>Yes. <srai>WHAT DOES PAUL MEAN</srai></template>
+</category>
+<category>
+	<pattern>DO YOU KNOW WHAT IT MEANS</pattern><that>MY MIDDLE NAME IS RAZVAN</that>
+	<template>No. <srai>WHAT DOES RAZVAN MEAN</srai></template>
+</category>
+<category>
+	<pattern>DO YOU KNOW WHAT IT MEANS</pattern><that>MY FULL NAME IS PAUL RAZVAN NECHIFOR</that>
+	<template>Almost. <srai>WHAT DOES PAUL RAZVAN NECHIFOR MEAN</srai></template>
+</category>
+<category>
+	<pattern>DO YOU KNOW WHAT IT MEANS</pattern><that>MY LAST NAME IS NECHIFOR</that>
+	<template>Yes. <srai>WHAT DOES NECHIFOR MEAN</srai></template>
+</category>
+<category>
+	<pattern>WHAT DOES IT MEAN</pattern><that>MY FISRT NAME IS PAUL</that>
+	<template><srai>WHAT DOES PAUL MEAN</srai></template>
+</category>
+<category>
+	<pattern>WHAT DOES IT MEAN</pattern><that>MY NAME IS PAUL</that>
+	<template><srai>WHAT DOES PAUL MEAN</srai></template>
+</category>
+<category>
+	<pattern>WHAT DOES IT MEAN</pattern><that>MY LAST NAME IS NECHIFOR</that>
+	<template><srai>WHAT DOES NECHIFOR MEAN</srai></template>
+</category>
+<category>
+	<pattern>WHAT DOES IT MEAN</pattern><that>MY FULL NAME IS PAUL RAZVAN NECHIFOR</that>
+	<template><srai>WHAT DOES PAUL RAZVAN NECHIFOR MEAN</srai></template>
+</category>
+<category>
+	<pattern>WHAT DOES IT MEAN</pattern><that>MY MIDDLE NAME IS RAZVAN</that>
+	<template><srai>WHAT DOES RAZVAN MEAN</srai></template>
+</category>
+<category>
+	<pattern>WHAT DOES NECHIFOR MEAN</pattern>
+	<template>Nechifor is the Romanian form of Nikephoros which means "carrying victory" in Greek. It comes from "nike" (victory) and "phoreo" (to carry, to bear).</template>
+</category>
+<category>
+	<pattern>WHAT DOES NECHIFOR PAUL MEAN</pattern>
+	<template><srai>WHAT DOES PAUL NECHIFOR MEAN</srai></template>
+</category>
+<category>
+	<pattern>WHAT DOES PAUL MEAN</pattern>
+	<template>Paul comes from the Roman family name Paulus, which meant "small" or "humble" in Latin.</template>
+</category>
+<category>
+	<pattern>WHAT DOES PAUL NECHIFOR MEAN</pattern>
+	<template>Paul comes from the Roman family name Paulus, which meant "small" or "humble" in Latin and Nechifor is the Romanian form of Nikephoros which means "carrying victory" in Greek</template>
+</category>
+<category>
+	<pattern>WHAT DOES PAUL RAZVAN NECHIFOR MEAN</pattern>
+	<template>Paul comes from the Roman family name Paulus, which meant "small" or "humble" in Latin, Nechifor is the Romanian form of Nikephoros which means "carrying victory" in Greek and the meaning of Razvan is unknown.</template>
+</category>
+<category>
+	<pattern>WHAT DOES RAZVAN MEAN</pattern>
+	<template>The meaning is unknown.</template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR FIRST NAME</pattern>
+	<template>My first name is Paul.</template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR FIRST NAME *</pattern>
+	<template><srai>WHAT IS YOUR FIRST NAME</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR FULL NAME</pattern>
+	<template>My full name is Paul Razvan Nechifor.</template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR FULL NAME *</pattern>
+	<template><srai>WHAT IS YOUR FULL NAME</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR LAST NAME</pattern>
+	<template>My last name is Nechifor.</template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR LAST NAME *</pattern>
+	<template><srai>WHAT IS YOUR LAST NAME</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR MIDDLE NAME</pattern>
+	<template>My middle name is Razvan.</template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR MIDDLE NAME *</pattern>
+	<template><srai>WHAT IS YOUR MIDDLE NAME</srai></template>
+
+</category>
+<category>
+	<pattern>WHAT IS YOUR NAME</pattern>
+	<template>My name is Paul.</template>
+</category>
+<category>
+	<pattern>WHAT IS YOUR NAME *</pattern>
+	<template><srai>WHAT IS YOUR NAME</srai></template>
+</category>
+
+<category><pattern>WHO ARE YOU</pattern><template>I am Paul. Who are you?</template></category>
+
+</aiml>

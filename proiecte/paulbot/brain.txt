@@ -1,0 +1,6 @@
+aiml/paul.xml
+aiml/personal.xml
+aiml/name.xml
+aiml/joke.xml
+aiml/default.xml
+aiml/alice_date.xml

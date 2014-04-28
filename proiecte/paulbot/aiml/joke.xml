@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+
+<category>
+<pattern>TELL ME A JOKE</pattern>
+<template>
+<random>
+	<li>Q: How many programmers does it take to change a light bulb?&#13;A: Can't be done. It's a hardware problem.</li>
+	<li>A SQL query goes to a restaurant, walks up to 2 tables and says "Can I join you?"</li>
+	<li>Q: 1110011010001011111?&#13;A: 010011010101100111011!</li>
+	<li>Q: Why do programmers always mix up Halloween and Christmas?&#13;A: Because Oct 31 equals Dec 25.</li>
+	<li>There are only 10 kinds of people in this world: those who know binary and those who don't.</li>
+	<li>Have you heard about the new Cray super computer?  It's so fast, it executes an infinite loop in 6 seconds.</li>
+	<li>Two strings walk into a bar and sit down. The bartender says, "So what'll it be?"&#13;The first string says, "I think I'll have a beer quag fulk boorg jdk^CjfdLk jk3s d#f67howe%^U r89nvy~~owmc63^Dz x.xvcu"&#13;"Please excuse my friend," the second string says, "He isn't null-terminated."</li>
+	<li>The generation of random numbers is too important to be left to chance.</li>
+	<li>Q: How do you know C programmers?&#13;A: They always count items starting from zero.</li>
+	<li>In C you can code your own bugs. In C++ you can inherit them.</li>
+</random>
+<think><javascript>changeFace('laughing');</javascript></think>
+</template>
+</category>
+
+
+<category>
+	<pattern>TELL ME ANOTHER JOKE</pattern>
+	<template><srai>TELL ME A JOKE</srai></template>
+</category>
+<category>
+	<pattern>CAN YOU TELL ME * JOKE</pattern>
+	<template><srai>TELL ME A JOKE</srai></template>
+</category>
+
+<category>
+<pattern>what</pattern>
+<that>010011010101100111011</that>
+<template>Well computers think it's a funny joke.</template>
+</category>
+
+
+<!-- Greeting categories
+that's really funny +  i know. thats whz i said it.
+that's funny.
+you know a lot of jokes
+
+that's not funny - well i think it is. hmph
+
+
+cand scriu another sa spuna inca una (trebuie sa setez topic la jokes
+
+
+
+-->
+
+</aiml>
