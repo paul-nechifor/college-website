@@ -1,6 +1,9 @@
 # College Website
 
-My initial college website in PHP from 2008.
+My initial college website in PHP from 2008. Also see [the second 2009
+version][second-version].
+
+![Screenshot](screenshot.png)
 
 ## Run it
 
@@ -13,3 +16,5 @@ and navigate to [localhost:8000](http://localhost:8000).
 ## License
 
 MIT
+
+[second-version]: https://github.com/paul-nechifor/college-website-2
