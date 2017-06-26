@@ -2,12 +2,12 @@
 
 function afiseazaAntet($titlu, $descriere, $cuvinteCheie)
 {
-	$root_f = '/'; //'http://students.info.uaic.ro/~paul.nechifor/';
-	
+	$root_f = '/college-website/'; //'http://students.info.uaic.ro/~paul.nechifor/';
+
 	if ($titlu=='') $titlu = 'Paul R. Nechifor';
 	if ($descriere=='') $descriere = 'Saitul personal al lui Paul Nechifor.';
 	if ($cuvinteCheie=='') $cuvinteCheie = 'Paul Nechifor, sait personal';
-	
+
 	print '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
