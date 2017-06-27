@@ -27,7 +27,7 @@ afiseazaAntet('Proiecte', '', '');
 
 <h4>Alte saituri</h4>
 <ul class="fara">
-<li><a href="proiecte/italia_fascista/index.html">Italia fascist&#259;</a> - Saitul care l-am folosit la atestat &icirc;n 2008, dar l-am creat &icirc;n 2007 pentru un concurs cu saituri despre istorie</li>
+<li><a href="/italia-fascista/introducere.html">Italia fascist&#259;</a> - Saitul care l-am folosit la atestat &icirc;n 2008, dar l-am creat &icirc;n 2007 pentru un concurs cu saituri despre istorie</li>
 </ul>
 
 <h4>Imagini</h4>
