@@ -36,6 +36,7 @@ else
 	  <input type="text" name="name" value="pa_ul" /> <input type="submit" name="mut" value="Mutatie" /></p>
 	</form>
 	<p>Sau alege din lista urm&#259;toare un nume:</p>
+	<!--googleoff: all-->
 	<table align="center" style="border:0; width:600px;"><tr>
 	<?php
 	for ($i=0; $i<4; $i++)
@@ -45,7 +46,7 @@ else
 			print NameSelection::afisare(NameSelection::silaba()."_".NameSelection::silaba()) . "<br />";
 		echo '</td>';
 	}	
-	echo '</tr></table>';
+	echo '</tr></table><!--googleon: all-->';
 }
 
 require '../../include/subsol.php';

@@ -22,14 +22,14 @@ if (isset($_POST['nr']))
 	if ($nr<20 || $nr>2000) echo '<p><strong>Eroare:</strong> Trebuie s&#259; fie un num&#259;r &icirc;ntre 20 &#351;i 2000.</p>';
 	else
 	{
-		echo '<table align="center" style="border:0; width:600px;"><tr>';
+		echo '<!--googleoff: all--><table align="center" style="border:0; width:600px;"><tr>';
 		for ($i=0; $i<4; $i++)
 		{
 			echo '<td>';
 			nume(ceil($nr/4));
 			echo '</td>';
 		}	
-		echo '</tr></table>';
+		echo '</tr></table><!--googleon: all-->';
 	}	
 }
 
