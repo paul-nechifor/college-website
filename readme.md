@@ -1,3 +1,7 @@
+# This repository has been moved to [gitlab.com/paul-nechifor/college-website](http://gitlab.com/paul-nechifor/college-website).
+
+Old readme:
+
 # College Website
 
 My initial college website in PHP from 2008. Also see [the second 2009
